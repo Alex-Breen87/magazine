@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>Изменение записи продаж</title>
+<style>
+.results tr[visible='false'],
+.no-result {
+display: none;
+}
+.results tr[visible='true'] {
+display: table-row;
+}
+.searchCount {
+padding: 8px;
+color: #ccc;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.wrapper button:not(:last-child) {
+    margin-right: 20px;
+}
+</style>
+</head>
+<body>
+<p>Код&nbsp; продажи&nbsp;<input name="id" size="15" type="text" />&nbsp; &nbsp; &nbsp; Дата продажи&nbsp;<input size="10" type="text" /></p>
+<p>&nbsp;</p>
+<p><span style="font-size:9px">Информация о товаре</span></p>
+<hr />
+<p><span style="font-size:18px">Товар</span><span style="font-size:16px">&nbsp;<select name="product"></select>&nbsp;</span></p>
+<p><span style="font-size:18px">Цена покупки&nbsp;<select name="price"></select></span></p>
+<p>Ед. измерения&nbsp;<select name="unit"></select></p>
+<hr />
+<p><em>Количество&nbsp;<input name="kol-vo" size="15" type="text" /></em></p>
+<p><em>Сумма&nbsp;<input name="sum" size="15" type="text" /></em></p>
+<p><em><input type="button" value="Изменить" /><form action="sale.html"><input type="button" value="Назад" /></em></p>
+</body>
+</html>
